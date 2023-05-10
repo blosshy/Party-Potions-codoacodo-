@@ -1,0 +1,469 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(129, 129, 129, 0.527) !important;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    background-color: rgb(14, 14, 104);
+    padding: 1rem;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #fbf5f3;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+}
+
+nav li a:hover{
+    color: #e28413;
+}
+
+.logo{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 5rem;
+}
+
+.bienv{
+    padding: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/images/bienv-fondo.jpg);
+}
+
+.bienv-texto{
+    font-family: 'Merriweather Sans', sans-serif; 
+    font-size: 5rem;
+    color: #fbf5f3;
+    letter-spacing: 5px;
+}
+
+.grid1{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "slider texto";
+    margin: 2rem;
+}
+
+.texto-grid{
+    grid-area: texto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 1rem;
+}
+
+.slider-grid{
+    grid-area: slider;
+    border: 6px solid #e28413;
+    height: fit-content !important;
+}
+
+.importante{
+    font-size: 2.5rem;
+    color: rgb(14, 14, 104);
+    font-weight: 500;
+    font-family: 'Anton', sans-serif;
+}
+
+.texto-1{
+    font-size: 1.5rem;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.texto-2{
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+.texto-3{
+    color: #d86c14;
+    font-size: 1.3rem;
+}
+
+.texto-4{
+    color: white;
+    text-align: center;
+}
+
+.texto-5{
+    margin-top: 1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    color: black;
+}
+
+.combos{
+    display: flex;
+    justify-content: space-around;
+    margin: 3rem;
+}
+
+.center{
+    text-align: center;
+    padding: 1rem;
+    padding-top: 2rem;
+    background-color: white;
+}
+
+
+.card-title{
+    font-family: 'Anton', sans-serif;
+    color: rgb(14, 14, 104) !important;
+}
+
+.card-text{
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.btn-primary {
+    --bs-btn-bg: #fd790d !important;
+    --bs-btn-border-color: #da7400 !important;
+}
+
+.card-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.clientes{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contacto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    margin-top: 2rem;
+    background-color: #d86c14;
+}
+
+.btn-contacto{
+    color: white;
+    background-color: rgb(30, 30, 179);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    border: lightblue;
+}
+
+.btn-contacto:hover{
+    background-color: rgb(60, 60, 202);
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+}
+
+
+/* ESTILOS RESPONSIVE  */
+@media screen and (max-width:440px) {
+    nav li a {
+        font-size: 0.5rem;
+        letter-spacing: 1px;
+    }
+    
+    .logo{
+        height: 4rem;
+        width: 4rem;
+        border-radius: 5rem;
+    }
+    
+    .bienv{
+        padding: 3rem;
+    }
+
+    .bienv-texto{ 
+        font-size: 2rem;
+    }
+    
+
+    .grid1{
+        row-gap: 1rem;
+        grid-template-rows: 0.5fr 1fr;
+        grid-template-columns: 1fr ;
+        grid-template-areas: 
+        "slider"
+        "texto";
+    }
+
+    .texto-1{
+        font-size: 1rem;
+    }
+
+    .importante{
+        font-size: 1.5rem;
+    }
+
+    .combos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0rem;
+    }
+    
+    .card{
+        width: 100% !important;
+        margin: 1rem;
+    }
+    
+    .card-img-top{
+        width: 100% !important;
+    }
+
+    .clientes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .img-cliente{
+        width: 30%;
+    }
+
+    .texto-5{
+        font-size: 0.75rem;
+        text-align: center;
+    }
+
+    .texto-grid{
+        padding-left: 0rem;
+    }
+}
+
+@media screen and (min-width:440px) and (max-width:700px){
+    nav li a {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+    
+    .logo{
+        height: 4rem;
+        width: 4rem;
+        border-radius: 5rem;
+    }
+    
+    .bienv{
+        padding: 3rem;
+    }
+
+    .bienv-texto{ 
+        font-size: 2rem;
+    }
+    
+
+    .grid1{
+        row-gap: 1rem;
+        grid-template-rows: 0.5fr 1fr;
+        grid-template-columns: 1fr ;
+        grid-template-areas: 
+        "slider"
+        "texto";
+    }
+
+    .texto-1{
+        font-size: 1rem;
+    }
+
+    .importante{
+        font-size: 1.5rem;
+    }
+
+    .combos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0rem;
+    }
+    
+    .card{
+        width: 100% !important;
+        margin: 1rem;
+    }
+    
+    .card-img-top{
+        width: 100% !important;
+    }
+
+    .clientes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .img-cliente{
+        width: 30%;
+    }
+
+    .texto-5{
+        font-size: 0.75rem;
+        text-align: center;
+    }
+
+    .texto-grid{
+        padding-left: 0rem;
+    }
+}
+
+@media screen and (min-width:700px) and (max-width:850px){
+    nav li a {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+    
+    .logo{
+        height: 4rem;
+        width: 4rem;
+        border-radius: 5rem;
+    }
+    
+    .bienv{
+        padding: 3rem;
+    }
+
+    .bienv-texto{ 
+        font-size: 2rem;
+    }
+    
+
+    .grid1{
+        row-gap: 1rem;
+        grid-template-rows: 0.5fr 1fr;
+        grid-template-columns: 1fr ;
+        grid-template-areas: 
+        "slider"
+        "texto";
+    }
+
+    .texto-1{
+        font-size: 1rem;
+    }
+
+    .importante{
+        font-size: 1.5rem;
+    }
+
+    .combos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0rem;
+    }
+    
+    .card{
+        width: 100% !important;
+        margin: 1rem;
+    }
+    
+    .card-img-top{
+        width: 100% !important;
+    }
+
+    .clientes{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+    }
+
+    .img-cliente{
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .texto-5{
+        font-size: 0.75rem;
+        text-align: center;
+    }
+
+    .texto-grid{
+        padding-left: 0rem;
+    }
+}
+
+@media screen and (min-width:850px) and (max-width:1400px){
+    nav li a {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+    
+    .logo{
+        height: 4rem;
+        width: 4rem;
+        border-radius: 5rem;
+    }
+    
+    .bienv{
+        padding: 3rem;
+    }
+
+    .bienv-texto{ 
+        font-size: 2rem;
+    }
+    
+
+    .grid1{
+        row-gap: 1rem;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-areas: 
+        "slider texto";
+    }
+
+    .texto-1{
+        font-size: 11px;
+    }
+
+    .importante{
+        font-size: 1rem;
+    }
+    
+    .card{
+        margin: 1rem;
+    }
+
+    .clientes{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+    }
+
+    .img-cliente{
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .texto-5{
+        font-size: 0.75rem;
+        text-align: center;
+    }
+
+}
+
