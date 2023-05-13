@@ -40,7 +40,7 @@ nav li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(./images/bienv-fondo.jpg);
+    background-image: url(../images/bienv-fondo.jpg);
 }
 
 .bienv-texto{
