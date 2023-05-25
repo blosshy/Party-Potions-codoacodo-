@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fbf5f3;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    background-color: rgb(14, 14, 104);
+    padding: 1rem;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #fbf5f3;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+}
+
+nav li a:hover{
+    color: #e28413;
+}
+
+.logo{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 5rem;
+}
+
+.titulo{
+    text-align: center;
+    margin: 4rem;
+    font-size: 3rem;
+    color: rgb(14, 14, 104);
+    font-weight: 500;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 3px;
+}
+
+.container-formulario{
+    display: flex;
+    justify-content: center;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:  #D19C3E;
+    border-radius: 1rem;
+    border: rgb(14, 14, 104) 2px solid;
+    padding: 4rem;
+}
+
+.label-color{
+    color: rgb(14, 14, 104);
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 800;
+}
+
+.logo-cnt{
+    height: 4rem;
+    width: 4rem;
+    margin-right: 1rem;
+}
+
+.cnt-titulo{
+    text-align: center;
+    color: rgb(14, 14, 104);
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+
+.redes-container{
+    display: grid;
+    margin: 5rem;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "redes ubi";
+}
+
+.redes{
+    grid-area: redes;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.ubicacion{
+    grid-area: ubi;
+}
+
+.red-item{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+.nombre-red{
+    color: #e28413;
+}
+
+.cnt-text{
+    color: rgb(14, 14, 104) ;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 800;
+}
+
+.ubi-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+    padding: 1rem;
+}
+
+.texto-footer{
+    font-family: 'Merriweather Sans', sans-serif;
+    margin-top: 1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.mensaje-error{
+    color: red;
+    font-size: 1rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.mensaje-correcto{
+    color: green;
+    font-size: 1rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.display{
+    display: none;
+}
+
+.enviado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.envio-titulo{
+    color: rgb(14, 14, 104) ;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 800;
+}
+
+.envio-texto{
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #e28413;
+    margin-bottom: 3rem;
+}
+
+@media screen and (max-width:440px) {
+    nav li a {
+        font-size: 0.5rem;
+        letter-spacing: 1px;
+    }
+    
+    .logo{
+        height: 4rem;
+        width: 4rem;
+        border-radius: 5rem;
+    }
+
+    .titulo{
+        margin: 2rem;
+        font-size: 1rem;
+    }
+
+    .redes-container{
+        margin: 2rem;
+    }
+
+    .formulario{
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (min-width:440px) and (max-width:700px){
+    nav li a {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+    
+    .logo{
+        height: 4rem;
+        width: 4rem;
+        border-radius: 5rem;
+    }
+}
+
+@media screen and (min-width:700px) and (max-width:850px){
+    nav li a {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+    
+    .logo{
+        height: 4rem;
+        width: 4rem;
+        border-radius: 5rem;
+    }
+
+    .texto-footer{
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (min-width:850px) and (max-width:1400px){
+    nav li a {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+    
+    .logo{
+        height: 4rem;
+        width: 4rem;
+        border-radius: 5rem;
+    }
+
+    .texto-footer{
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-width:1400px){
+    .redes-container{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "redes"
+        "ubi";
+    }
+}
